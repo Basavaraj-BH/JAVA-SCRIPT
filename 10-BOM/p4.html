@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <center>
+        <h1>BOM</h1>
+    </center>
+    <hr>
+
+    <script>
+        function getViews(){
+            alert("You've accessed"+ history.length+ "webpage in thise session");
+        }
+    </script>
+    <button type="button" onclick="getViews();">Get views Count</button>
+
+    <a href="p5.html">Open p5.html</a>
+
+    <script>
+        function goForword(){
+            window.history.forward();
+        }
+    </script>
+    <button type="button" onclick="goForword();">Go Forword</button>
+</body>
+</html>

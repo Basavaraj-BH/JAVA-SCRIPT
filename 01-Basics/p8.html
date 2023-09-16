@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>Condition Statements..!</h1>
+    </center>
+    <hr>
+
+    <ol>
+        <li>Simple If</li>
+        <li>If Else</li>
+        <li>If else ladder</li>
+        <li>Switch Case</li>
+    </ol>
+    <hr>
+
+    <h2>Simple If Statements..!</h2>
+    <script>
+        let testvariable = 100;
+        document.write(`<h2>Test  Variable value is : ${testvariable}</h2><hr>`)
+        if(testvariable == 100){
+            console.log("Condition is true");
+        } 
+    </script>
+    <hr>
+
+    <h2>IF ELSE Statement..!</h2>
+    <script>
+        let firstNumber = 100;
+        let lastNumber = 200;
+
+        document.write(`<h2>Is Equal To</h2>`);
+        if (firstNumber == lastNumber){
+            document.write(`<h2>Numbers are same </h2>`);
+        } else {
+            document.write(`<h2>numbers are not same</h2><hr>`);
+        }
+
+        document.write(`<h2>Identical (equal and of same data type)</h2>`);
+        if (firstNumber === lastNumber){
+            document.write(`<h2>Numbers are same</h2>`);
+        } else {
+            document.write(`<h2>numbers are not same</h2><hr>`);
+        }
+        document.write(`<h2> Not Equal To</h2>`);
+        if (firstNumber != lastNumber){
+            document.write(`<h3>numbers are equal</h3>`);
+        } else {
+            document.write(`<h3>numbers are not equal</h3><hr>`);
+        }
+        document.write(`<h2>Not Identical</h2>`);
+        if(firstNumber !== lastNumber){
+            document.write(`<h3>numbers are  Identical</h3>`);
+        }else{
+            document.write(`<h3>numbers are not Identical</h3><hr>`);
+        }
+        document.write(`<h2>Greater than</h2>`);
+        if(firstNumber > lastNumber){
+            document.write(`<h3>numbers are Greater than</h3>`);
+        }else{
+            document.write(`<h3>numbers are not Greater than</h3><hr>`);
+        }
+        document.write(`<h2>Greater equal to</h2>`);
+        if(firstNumber >= lastNumber){
+            document.write(`<h3>numbers are  Greater equal to</h3>`);
+        }else{
+            document.write(`<h3>numbers are not Greater equal to</h3> <hr>`);
+        }
+        document.write(`<h2>Less than</h2>`);
+        if(firstNumber < lastNumber){
+            document.write(`<h3>numbers are less than</h3>`);
+        }else{
+            document.write(`<h3>numbers are not less than</h3> <hr>`);
+        }
+        document.write(`<h2>Less than are equal to</h2>`);
+        if(firstNumber <= lastNumber){
+            document.write(`<h3>numbers are less than are equal to</h3>`);
+        }else{
+            document.write(`<h3>numbers are not less than are equal to</h3> <hr>`);
+        }
+    </script>
+    
+</body>
+</html>

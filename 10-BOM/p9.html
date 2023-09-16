@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <script>
+        function myfunction(){
+            alert("Hello world..!");
+        }
+        // setInterval(myfunction,1000);
+        //setTimeout(myfunction,1000);
+    </script>
+    <!-- <button type="button" onclick="myfunction()">Click Me</button>  -->
+    <button type="button" onclick="setInterval(myfunction,1000)">Click Me</button>
+    <p>The Current Time of Your Computer is: <span id="clock"></span></p>
+
+    <script>
+        function showTime(){
+            let time = new Date();
+            document.getElementById("clock").innerHTML = time.toLocaleTimeString();
+        }
+        setInterval(showTime,1000);
+    </script>
+    
+    <script>
+        function shoeAlert(){
+            alert("Thise is JavaScript Alert Box..!");
+        }
+        function delayedAlert(){
+            setTimeout(shoeAlert,2000);
+        }
+        function clearAlert(){
+            clearTimeOut(timeout);
+        }
+    </script>
+    <button type="button" onclick="delayedAlert();">Show Alert after two seconds</button>
+    <button type="button" onclick="clearAlert();">Cancel Alert before its Display</button>
+
+</body>
+</html>

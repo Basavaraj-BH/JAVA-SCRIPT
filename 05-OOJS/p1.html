@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <center>
+        <h1>JAVASCRIPT OBJECT</h1>
+    </center>
+    <hr>
+
+    <ol>
+        <li>
+            Literal Type(Single)
+            <ul>
+                <li>Object Literal</li>
+                <li>Creating instance of object directly(Using Constructor Method)</li>
+                <li>using an Object Constructor(Using Constructor Parameter)</li>
+            </ul>
+        </li>
+        <li>Object Array</li>
+        <li>JSON (JAVASCRIPT Object Natatio) Array (Respons of REST[Representational state transfer]) API</li>
+    </ol>
+    <hr> 
+
+    <center>
+        <h1>Literal Object</h1>
+        <p>key: value => property of an Object</p>
+    </center>
+    <p><strong>SYNTAX:</strong></p>
+    <pre>
+        let literaObjectName = {
+            "key1":"value1",
+            "key2":"value2",
+            "key3":"value3",
+            "key4":"valuen",
+        };
+
+        console.log(literalObjectName);
+        console.log(typeof(literalObjectName));
+        console.log(literalObjectName.key1);
+    </pre>
+    <hr>
+
+    <script>
+        let test = "Hello";
+        document.write(`<h3>Typeof test = ${typeof(test)}</h3>`);
+        document.write(`<h3> test = ${test}</h3>`);
+
+        let car = {
+            //key : value => property of an object
+            'mode1' : 2023,
+            "color" : 'red',
+            "brand" : "ETIOS",
+            "company" : "Toyota",
+            "isRunnable" : true,
+        };
+        document.write(`<h3>CAR = ${car}</h3>`);//[object object]
+        document.write(`<h3>CAR TYPEOF = ${typeof car}</h3>`);
+        document.write(`<h3>CAR MODEL = ${car.model}</h3>`);//object key
+        document.write(`<h3>CAR COLOR = ${car['color']}</h3>`);//object key
+        document.write(`<h3>CAR BRAND = ${car.brand}</h3>`);
+        document.write(`<h3>CAR COMPANY = ${car.company}</h3>`);
+        document.write(`<h3>CAR isRUNNABLE = ${car.isRunnable}</h3>`);
+    </script>
+</body>
+</html>

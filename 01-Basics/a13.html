@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of Days in a munth</title>
+</head>
+<body>
+
+    <section>
+        <h1>Enter Month(1-12):</h1>
+        <input type="text" id="month">
+        <button id="result" type="submit">Submit</button>
+    </section>
+    <script>
+        let month = Number(document.getElementById("month"));
+        let result = document.getElementById("result");
+
+        if(month==6 || month==4 || month==9 || month==11){
+            document.write("This month has 30 Days");
+        }else if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12){
+            document.write("Thise month has 31 days");
+        }else{
+            document.write("Thise month has 28 Days")
+        }
+        document.getElementById("month").innerHTML = ""
+        document.getElementById("result").innerHTML = ""
+    </script>
+</body>
+</html>

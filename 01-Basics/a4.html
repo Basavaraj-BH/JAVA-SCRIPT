@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        JS-BASICS
+    </title>
+</head>
+<body>
+    <center><h1>Condition Positive or Negative</h1></center>
+    <script>
+        let x = prompt("Enter the A value?");
+        document.write(`<h3>Typeof Method ${typeof(x)}</h3>`);
+
+        var a = Number(x);
+
+        if(a>0){
+            document.write(`<h3>A Value is positive</h3>`)
+        }else if(a==0) {
+            document.write(`<h3>A value is Zero</h3>`)
+        }else{
+            document.write(`<h3>A Value is Negative</h3>`)
+        }
+    </script>
+</body>
+</html>

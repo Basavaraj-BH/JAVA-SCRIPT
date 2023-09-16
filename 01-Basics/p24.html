@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>  With Parameter, Without Return value Example...1</h1>
+    </center> 
+    <hr>
+
+    <script>
+        function stubDetails(firstName, lastName){
+            document.write(`<p>first parameter is : ${firstName}</p>`);
+            document.write(`<p>first parameter is : ${lastName}</p>`);
+
+            let fn, ln, fullName;
+
+            fn = firstName;
+            ln = lastName;
+            document.write(`<p>first variable value is : ${fn}</p>`);
+            document.write(`<p>first variable value is : ${ln}</p>`);
+
+            fullName = fn + ln;
+            document.write(`<p>fullName variable value is : ${fullName}</p>`);
+        }
+        stubDetails("basav",100);
+    </script>
+
+</body>
+</html>

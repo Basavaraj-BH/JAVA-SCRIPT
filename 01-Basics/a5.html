@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+   <center>
+      <h1>marks = 70-100(A) 50-70(B) 35-50(C) ==35(D) , Fail</h1>
+  </center>
+  <hr>
+    <script>
+         var a = prompt("Enter Kannada Marks");
+         var b = prompt("Enter English Marks");
+         var c = prompt("Enter Hindi Marks");
+         var d = prompt("Enter Social Marks");
+         var e = prompt("Enter Science Marks");
+         var f = prompt("Enter Mathsmetics Marks");
+        
+         var x = Number(a);
+         var y = Number(b);
+         var z = Number(c);
+         var xx = Number(d);
+         var yy = Number(e);
+         var zz= Number(f);
+
+         if(Marks>=70){
+            document.write(`<h3>Above Distinction(A)</h3>`)
+         }else if (Marks>=50,Marks<70){
+            document.write(`<h3> Distinction(B)</h3>`)
+         }else if (Marks>=35,Marks<=50){
+            document.write(`<h3>First Class(C)</h3>`)
+         }else if (Marks<=35){
+            document.write(`<h3>Pass(D)</h3>`)
+         }else {
+            document.write(`<h3>Fail</h3>`)
+         }
+         {
+            document.write(`<h3>((${x}+${y}+${z}+${xx}+${yy}+${zz})/${600})*${100} = ${Marks}</h3>`);
+         }
+    </script>
+</body>
+</html>

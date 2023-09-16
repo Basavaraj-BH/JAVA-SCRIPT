@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS</title>
+</head>
+<body>
+    <input type="text" name="first" id="first" placeholder="First Name">
+    <input type="text" name="last" id="last" placeholder="last Name">
+    <button onclick="document.getElementById('first').value,200">Submit</button>
+
+    <script>
+        function Demo(firstName, lastName){
+            alert(firstName)
+            alert(lastName);
+        }
+        document.getElementById("test").onclick = Demo(document.getElementById('first').value,200);
+    </script>
+</body>
+</html>

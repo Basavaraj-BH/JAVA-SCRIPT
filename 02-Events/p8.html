@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENT</title>
+    <style>
+        video{
+            padding: 10px;
+            margin: 30px;
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Media Events</h1>
+    </center>
+    <hr>
+
+    <h3 id="video"></h3>
+    <video src="Assets/media/Video/End_of_Dwaparyuga_🥺💖.mp4" height="400" controls onplay="playHan()" onpause="pauseHan()" onvolumechange="volumeHan()" onseeking="seekHan()"></video>
+
+    <script>
+        var video = document.getElementById("video");
+        function playHan(){
+            video.innerHTML = "video start playing";
+            video.style.color = "red";
+        }
+        function pauseHan(){
+            video.innerHTML = "video pused"; 
+            video.style.color = "orange";
+        }
+        function volumeHan(){
+            video.innerHTML = "video volumr incresed";
+            video.style.color = "green";
+        }
+        function seekHan(){
+            video.innerHTML = "video time changed";
+            video.style.color = "blue";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom</title>
+</head>
+<body>
+    <script>
+        let x = prompt("Enter Your Number:");
+
+        var a = Number(x);
+        let temp = 0;
+        let original = a;
+
+        while(a>0){
+            let rem = a % 10;
+            temp = temp * 10 + rem;
+            a = (a / 10);
+        }if(temp == original){
+            document.write("Number is a Palindrom");
+        }else{
+            document.write("Number is Not a Palindrom");
+        }
+    </script>
+</body>
+</html>

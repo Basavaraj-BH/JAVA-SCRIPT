@@ -1,0 +1,41 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.parent{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.parent2{
+    /* justify-content: center;
+    align-items: center; */
+    line-height: 3;
+    background-color: white;
+    padding: 80px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 8) 0px 3px 8px; 
+}
+.parent2>input{
+    width: 99%;
+    height: 30px;
+    border-radius: 20px 5px 20px 5px;
+    padding-bottom: 20px;
+}
+#inputField{
+    justify-content: center;
+   text-align: center;
+   font-size: 20px;
+}
+.parent2>button{
+    background-color: blue;
+    color: #fff;
+    font-size: 20px;
+    height: 35px;
+    width: 50%;
+    border-radius: 20px 5px 20px 5px;
+    /* left: 100px; */
+}

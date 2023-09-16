@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Check input character is alphabet, digit or special character.</h1>
+    </center>
+    <hr>
+    <center>
+        <h1>Enter Input</h1>
+        <input type="text" name="" id="input">
+        <button type="submit">Submit</button>
+    </center>
+
+    <script>
+        function checkBox(){
+            var input = document.getElementById("input");
+            var inputValue = input.value;
+
+            if(input.value == 10){
+                document.getElementById("submit").textContent = "The character or digit or alphabet must be 10 only";
+            }else{
+                document.getElementById("submit").textContent = "Valid Input";
+                
+            }
+        }
+    </script>
+</body>
+</html>

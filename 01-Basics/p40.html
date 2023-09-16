@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>Object Array</h1>
+    </center>
+    <hr>
+    <script>
+        let users = [
+            {
+                id: 1, // key:value => Proerty
+                name:"Basava",
+                email:"basava@gmail.com",
+                age:22
+            },
+            {
+                id: 2, // key:value => Proerty
+                name:"Sagar",
+                email:"Sagar@gmail.com",
+                age:23
+            },
+            {
+                id: 3, // key:value => Proerty
+                name:"Pradeep",
+                email:"Pradeep@gmail.com",
+                age:24 
+            },
+        ];
+
+        document.write(`<p>users Array : ${users}</p>`);
+        document.write(`<p>users Array[0] : ${users[0]}</p>`);
+        document.write(`<p>users Array[1] : ${users[1]}</p>`);
+        document.write(`<p>users ID : ${users.id}</p>`); // Undefined because of many users
+        document.write(`<p>users[0].ID : ${users[0].id}</p>`);
+        document.write(`<p>users[0].NAME : ${users[0].name}</p>`);
+        document.write(`<p>users[0].EMAIL : ${users[0].email}</p>`);
+        document.write(`<p>users[0].AGE : ${users[0].age}</p>`);
+        document.write(`<hr>`);
+
+        for(i=0; i<users.length; i++) {
+            document.write(`<h3> id = ${users[i].id}</h3>`);
+            document.write(`<h3> name = ${users[i].name}</h3>`);
+            document.write(`<h3> email = ${users[i].email}</h3>`);
+            document.write(`<h3> age = ${users[i].age}</h3>`);
+        }
+        document.write(`<hr>`);
+
+        document.write(`<h3>EXAMPLE : 1</h3>`);
+
+        users.forEach(element => {
+            document.write(element, "<br>");
+            document.write(element.id, "<br>");
+            document.write(element.name, "<br>");
+            document.write(element.email, "<br>");
+            document.write(element.age, "<br>");
+        });
+        document.write(`<hr>`);
+
+        // or
+
+        document.write(`<h3>EXAMPLR : 2</h3>`); //we can use thise also
+        
+        users.forEach(function(item) {
+            document.write(item, "<br>");
+            document.write(item.id, "<br>");
+            document.write(item.name, "<br>");
+            document.write(item.email, "<br>");
+            document.write(item.age, "<br>");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+    <body>
+        <center>
+            <h1>Array</h1>
+            <p>Collections of data.</p>
+        </center>
+        <hr>
+        <h2>By Array Literal</h2>
+        <hr>
+        <script>
+            let fruits = ["Apple", "bannana", "orange", "Mango", "Papaya",2456];
+            document.write(typeof(fruits)+"<br>");
+            document.write(fruits + "<br>");
+            document.write("<hr>");
+            document.write("Fruits length = ", fruits.length+ "<br>");
+            document.write("Fruits Index Value = ", fruits[0]+"<br>");
+            document.write("Second Index value=", fruits[1]+"<br>");
+            document.write("<br>");
+
+            for(let index=0;index<fruits.length;index++){
+                document.write(color[index]+"<br>");
+            }
+        </script>
+
+        <hr>
+        <center>
+            <h1>By Creating instance of Array Object or Constructor directly(Using New Keyword)</h1>
+        </center>
+            <hr>
+
+            <script>
+                let empName = new Array();
+                document.write("empName =",typeof(empName));
+
+                empName[0] = "Basava";
+                empName[1] = "Sagar";
+                empName[2] = "praddep";
+                empName[3] = "Ningu";
+                empName[4] = "Jeeju";
+                empName[5] = "Kallesh V D";
+                empName[6] = "Kallesh M";
+                empName[7] = "Akshath";
+
+                for(let index=0;index<empName.length;index++){
+                    document.write(empName[index] + "<br>");
+                }
+            </script>
+            <hr>
+            <center>
+                <h1>By Using Object Constructor Parameter (Using New Keyword)</h1>
+            </center>
+            <hr>
+
+            <script>
+                let studentInfo = new Array("AK", "PK","RK","BH");
+                for(let index = 0;index<studentInfo.length;index++){
+                    document.write(studentInfo[index] + "<br>");
+                }
+            </script>
+    </body>
+</html>

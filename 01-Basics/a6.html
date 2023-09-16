@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <h1>for loop..!</h1>
+    <br>
+
+    <h2> half pyramid</h2>
+    <script>
+        var a = 7;
+        for(let i=1; i<=a; i++ ){
+            for(let j=1; j<=i;j++){
+            document.write(`${" 1 "}`);
+        }
+        document.write(`<br>`);
+    }
+    </script>
+
+    <br>
+
+    <h2>Inverted half pyramid</h2>
+    <script>
+         var a = 7;
+        for(let i=1; i<=a; i++ ){
+            for(let j=i; j<=a;j++){
+            document.write(`${" 1 "}`);
+        }
+        document.write(`<br>`);
+    }
+    </script>
+
+    <br>
+
+    <h2> Square pyramid</h2>
+    <script>
+        var a = 7;
+        for(let i=1; i<=a; i++ ){
+            for(let j=1; j<=a;j++){
+                for(let k=1;k<=a;k++){
+                    document.write(`${"   "}`);
+                }
+            document.write(`${" 1 "}`);
+        }
+        document.write(`<br>`);
+    }
+    </script>
+</body>
+</html>

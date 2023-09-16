@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise OPERATORS</title>
+</head>
+<body>
+    <h1>BITWISE OPERATORS</h1>
+    <script>
+    let firstNumber = 100;
+    let middleNumber = 200;
+    let lastNumber = 300;
+
+    document.write(`<h2>Bitwise AND</h2/`);
+    if(firstNumber==middleNumber & middleNumber==lastNumber){
+        document.write(`<h3>Result : ${true}</h3>`);
+    } else{
+        document.write(`<h3>Result : ${false}</h3><hr>`);
+    }
+    document.write(`<h2>Bitwise OR</h2>`);
+    if(firstNumber==middleNumber & middleNumber==lastNumber){
+        document.write(`<h3>Result : ${true}</h3>`);
+    }else{
+        document.write(`<h3>Result : ${false}</h3><hr>`);
+    }
+    document.write(`<h2>Bitwise XOR</h2>`);
+    if(firstNumber==middleNumber & middleNumber==lastNumber){
+        document.write(`<h3>Result : ${true}</h3>`);
+    }else{
+        document.write(`<h3>Result : ${false}</h3><hr>`);
+    }
+    document.write(`<h2>Bitwise NOT</h2>`);
+    if(~firstNumber){
+        document.write(`<h3>Result : ${true}</h3>`);
+    }else{
+        document.write(`<h3>Result : ${false}</h3><hr>`);
+    }
+    document.write(`<h2>Bitwise Left Shift</h2>`);
+    if(firstNumber<<lastNumber){
+        document.write(`<h3>Result : ${true}</h3>`);
+    }else{
+        document.write(`<h3>Result : ${false}</h3><hr>`);
+    }
+    document.write(`<h2>Bitwise Right Shift</h2>`);
+    if(firstNumber>>lastNumber){
+        document.write(`<h3>Result : ${true}</h3>`);
+    }else{
+        document.write(`<h3>Result : ${false}</h3><hr>`);
+    }
+    document.write(`<h2>Bitwise Right Shift with Zero</h2>`);
+    if(firstNumber>>>lastNumber){
+        document.write(`<h3>Result : ${true}</h3>`);
+    }else{
+        document.write(`<h3>Result : ${false}</h3><hr>`);
+    }
+    </script>
+</body>
+</html>
