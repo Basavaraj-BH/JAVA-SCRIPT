@@ -12,7 +12,7 @@
 
     <script>
         //Object Constructor
-        // Object.creat -> copy or clone one prototype in another object
+        // Object.getPrototypeOf(cloned object) ->return the property of cloned object
 
         const user={
             name: "Raj",
@@ -25,6 +25,9 @@
 
         let user1 = Object.create(user);
         console.log('user1 =',user1);
+
+        let result = Object.getPrototypeOf(user1);
+        console.log('getPrototypeOf() =', result);
     </script>
 </body>
 </html>
